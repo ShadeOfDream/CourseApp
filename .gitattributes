@@ -2,7 +2,7 @@
 # Set default behavior to automatically normalize line endings.
 ###############################################################################
 * text=auto
-CourseApp/Views/Home/Index.cshtml/html/* linguist-vendored
+CourseApp/Views/html/* linguist-vendored
 ###############################################################################
 # Set default behavior for command prompt diff.
 #
