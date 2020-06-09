@@ -1,0 +1,18 @@
+﻿@model CourseApp.Models.CourseModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <p>Kurs Adı : @Model.Name</p>
+    <p>Açıklam : @Model.Description</p>
+    <p>Yayınlandı mı : @Model.IsPublished</p>
+</body>
+</html>

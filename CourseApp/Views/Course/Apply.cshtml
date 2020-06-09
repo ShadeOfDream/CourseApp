@@ -1,0 +1,62 @@
+﻿@model StudentModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Apply</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container m-4" style="width:800px;">
+        <div class="card border-dark mb-3" style="width:500px;">
+            <div class="card-header">
+                Kayıt Formu
+            </div>
+            <div  class="card-body text-dark" >
+                
+                <form asp-action="Apply" method="post">
+                    <div asp-validation-summary="All"></div>
+                    <div form-group row>
+                       <label asp-for="Name" class="col-sm-3 ">Adınız</label>
+                       <input asp-for="Name"  />
+                        
+                    </div>
+                    
+                    <div form-group row>
+                        <label asp-for="Email" class="col-sm-3 ">Eposta</label>
+                        <input asp-for="Email"  />
+                    </div>
+                    <div form-group row>
+                        <label asp-for="Phone" class="col-sm-3 ">Telefon</label>
+                        <input asp-for="Phone" />
+                    </div>
+                    <div form-group row>
+                        <label asp-for="Confirm" class="col-sm-6 ">Kursa katılacak mısınız?</label>
+                        <select asp-for="Confirm">
+                            <option value="true">Evet, geliyorum.</option>
+                            <option value="false">Hayır, gelmiyorum.</option>
+                        </select>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-10"> <input type="submit" value="KAYIT" class="btn btn-primary " /></div>
+                    </div>
+                   
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    
+</body>
+</html>
